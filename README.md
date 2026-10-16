@@ -1,9 +1,79 @@
 # Workstone · Global Knowledge Network
 
-**Research, global expansion, and practical AI tools.**  
-**研究、出海服务与实用 AI 工具。**
+**让 AI Agent 帮你读社媒、追踪信息，把想法做成能用的工具。**
 
-[English](#about-me--global-knowledge-network) · [中文](#关于我与-global-knowledge-network) · [Projects / 开源项目](#start-here--从这里开始) · [Contributions / 社区贡献](#open-source-contributions--开源贡献)
+**Practical AI tools for social research, information tracking, and building useful products.**
+
+我是 GKN 团队成员，从研究与信息服务出发，与 AI Agent 协作推进工具和产品落地。这里分享我们从实际工作中整理出的开源项目，欢迎试用、提建议和参与改进。
+
+I am a member of Global Knowledge Network (GKN), working with AI agents to turn research workflows into practical tools. This account shares reusable projects from that work. Feedback and contributions are welcome.
+
+[主要项目 / Start here](#start-here--从这里开始) · [更多工具 / More tools](#more-tools--更多工具) · [社区贡献 / Contributions](#open-source-contributions--开源贡献) · [关于我 / About](#about-me--global-knowledge-network)
+
+## Start here / 从这里开始
+
+| 你想完成的事 / Your goal | 项目 / Project | 看演示与开始使用 / Try it |
+| --- | --- | --- |
+| **让 Agent 搜索、阅读国内社媒**：跨平台读原文、图中文字和有限评论，保留可回查的来源。 / Search and read Chinese social platforms with your local agent. | **[智能体国内社媒使用工具](https://github.com/workstonedai-collab/social-media-read-for-agent)** · `social-media-read-for-agent` | [把仓库交给 Agent](https://github.com/workstonedai-collab/social-media-read-for-agent#把仓库交给-agent) · [安装说明 / Setup](https://github.com/workstonedai-collab/social-media-read-for-agent/blob/main/docs/installation.md) · [虚构数据演示 / Fictional demo](https://github.com/workstonedai-collab/social-media-read-for-agent/blob/main/docs/assets/offline-demo.jpg) |
+| **把分散的信息整理成自己的表格**：追踪网页、RSS 与关键词，用自选 API 做摘要、标签和字段富化。 / Track sources and searches into custom information tables with optional AI enrichment. | **[GKN 全球信息采集程序](https://github.com/workstonedai-collab/global-knowledge-crawl-pipeline)** · Global Knowledge Crawl Pipeline | [无需密钥的离线案例 / Offline case](https://github.com/workstonedai-collab/global-knowledge-crawl-pipeline/blob/main/docs/walkthrough.zh-CN.md) · [English guide](https://github.com/workstonedai-collab/global-knowledge-crawl-pipeline/blob/main/docs/walkthrough.en.md) |
+| **看着页面改样式，再保存回源码**：点选元素、预览 CSS、保存与撤销，适合调整 Agent 生成的静态页面。 / Select an element, preview CSS changes, save to source, and undo. | **[Click-to-CSS · 点选式网页样式编辑器](https://github.com/workstonedai-collab/click-to-css)** | [操作演示 / Walkthrough](https://github.com/workstonedai-collab/click-to-css/blob/main/docs/walkthrough.zh-CN.md) · [English guide](https://github.com/workstonedai-collab/click-to-css/blob/main/docs/walkthrough.en.md) |
+
+### 不熟悉配置？把项目链接交给你的 Agent
+
+社媒工具已接入**小红书、微博、知乎和微信公众号**，支持 Codex、Hermes 等本地 Agent。Agent 可以自动准备独立运行环境、配置工具并引导登录，无需你预先安装 Python、Node 或复制 Cookie。你需要确认官方浏览器扩展权限，并在平台页面正常登录；当前为只读预览版，自动浏览器设置主要覆盖 macOS + Chrome。
+
+The social reader connects Xiaohongshu, Weibo, Zhihu, and WeChat public-account articles to local agents such as Codex and Hermes. Let the agent prepare its runtime and guide setup; you approve the browser extension and sign in on the platforms. It is a read-only preview, with automatic browser setup primarily verified on macOS + Chrome.
+
+复制下面这段给你的本地 Agent / Copy this to your local agent:
+
+> 请安装并配置 https://github.com/workstonedai-collab/social-media-read-for-agent 。先阅读仓库 AGENTS.md 和安装说明，自动准备环境，使用专用浏览器资料，引导我确认扩展授权并正常登录。不要向我索取 Cookie、密码或验证码。完成后，在当前对话里实际搜索并阅读一次，说明可用平台与读取范围。
+
+建议使用个人隐私内容较少的专用账号。平台再次要求登录或安全验证时，需要本人正常完成。各项目的支持范围、许可证和详细步骤以仓库说明为准。
+
+<details>
+<summary>看看另外两个工具的实际演示 / See the tools in action</summary>
+
+**信息采集：来源 → 自定义表格 → 证据与复用。 / Information collection: sources → table → evidence and reuse.**
+
+以下是实际运行的虚构离线案例，无需账号、联网或模型密钥。 / A real run using fictional offline fixtures, with no account, network, or model key.
+
+[![信息采集程序离线演示 / Pipeline offline demo](https://raw.githubusercontent.com/workstonedai-collab/global-knowledge-crawl-pipeline/main/docs/demo.gif)](https://github.com/workstonedai-collab/global-knowledge-crawl-pipeline/blob/main/docs/walkthrough.zh-CN.md)
+
+**页面样式：点选 → 预览 → 保存 → 撤销。 / CSS editing: select → preview → save → undo.**
+
+以下是自带静态页面中的实际编辑演示。 / An actual edit in the included static example.
+
+[![Click-to-CSS 实际操作演示](https://raw.githubusercontent.com/workstonedai-collab/click-to-css/main/docs/demo.gif)](https://github.com/workstonedai-collab/click-to-css/blob/main/docs/walkthrough.en.md)
+
+</details>
+
+## More tools / 更多工具
+
+| 项目 / Project | 用途 / Purpose |
+| --- | --- |
+| [AI Evidence Check](https://github.com/workstonedai-collab/ai-evidence-check) | 将 AI 提取的字段、引用、数字与提供的原文对照，生成复核报告。 / Compare extracted fields, quotations, and numbers with supplied source text. |
+| [Agent Task Recovery Kit](https://github.com/workstonedai-collab/agent-task-recovery-kit) | 保存本地检查点，在中断后恢复顺序任务，复用已完成结果。 / Checkpoint and resume sequential workflows locally. |
+| [Report Export Kit](https://github.com/workstonedai-collab/report-export-kit) | 将结构化内容、表格和图表导出为 PDF、Word 和 Markdown。 / Export structured reports, tables, and charts. |
+| [Public Data Connectors](https://github.com/workstonedai-collab/public-data-connectors) | 接入 World Bank、Eurostat 和 GLEIF，保留单位、时间和来源。 / Access public datasets with provenance. |
+| [Bilingual News Dedupe](https://github.com/workstonedai-collab/bilingual-news-dedupe) | 中英文资讯流程中的去重工具。 / Deduplication for Chinese and English news workflows. |
+| [Source Rights Gate](https://github.com/workstonedai-collab/source-rights-gate) | 可配置的信息来源权限与采集规则。 / Configurable source permissions and collection rules. |
+| [Human Review Research Agent](https://github.com/workstonedai-collab/human-review-research-agent) | 带人工复核的研究智能体示例。 / A research-agent example with human review. |
+| [Miniapp Project Check](https://github.com/workstonedai-collab/miniapp-project-check) | 小程序项目配置的本地检查工具。 / Local checks for mini-program project setup. |
+
+## Open-source contributions / 开源贡献
+
+We also contribute fixes and documentation to tools we use. Status below was checked on **2026-10-16**; the linked pull requests contain the latest updates.
+
+我们也向使用的开源工具提交修复和文档改进。以下状态核对于 **2026-10-16**，最新进展请查看对应 PR。
+
+| Project / 项目 | Contribution / 贡献 | Status / 状态 |
+| --- | --- | --- |
+| [Kandev](https://github.com/kdlbs/kandev/pull/4082) | Documented E2E setup for a fresh checkout. / 补充从新检出项目开始的端到端测试准备说明。 | **Merged; included in [v0.97.0](https://github.com/kdlbs/kandev/releases/tag/v0.97.0). / 已合并，并进入正式版本。** |
+| [Trafilatura](https://github.com/adbar/trafilatura/pull/944) | Linked existing URL-discovery tools from extraction guidance. / 在内容提取说明中补充已有链接发现工具的入口。 | **Merged. / 已合并。** |
+| [MarkItDown](https://github.com/microsoft/markitdown/pull/2529#issuecomment-5997199878) | Fixed code-fence handling after list markers, preserving code whitespace. / 修复列表标记后代码围栏的处理，保留代码空白。 | **Patch adopted into the original author's PR branch with authorship preserved; upstream PR awaits merge. / 补丁已被原作者纳入其 PR 分支并保留署名，上游 PR 待合并。** |
+
+<details>
+<summary>关于我与 GKN / About me and GKN</summary>
 
 ## About Me & Global Knowledge Network
 
@@ -29,39 +99,10 @@ This account documents our open-source work and contributions to the wider commu
 
 这个账号记录我们在上述方向上的开源实践与社区贡献。我们将实践中具有通用价值的工具整理出来，涉及信息采集、证据校验、公共数据接入、任务恢复和报告生成，希望它们也能帮助其他研究者、开发者和团队开展工作。
 
-## Start here / 从这里开始
-
-Choose a tool by the task you want to complete. Each repository contains its own setup instructions, examples, scope, and license.  
-根据你想完成的任务选择工具。各仓库都有自己的安装说明、示例、适用范围和许可证。
-
-| Project / 项目 | What it helps you do / 可以帮你做什么 |
-| --- | --- |
-| **[Global Knowledge Crawl Pipeline](https://github.com/workstonedai-collab/global-knowledge-crawl-pipeline)** | Collect information from configured web pages and keyword searches, optionally enrich it through your own APIs, and organize it into a configurable information table. / 从指定网页和关键词检索收集信息，可通过自定义 API 进行摘要、研判和标签富化，并按自定义字段整理成信息表。 |
-| **[Click-to-CSS](https://github.com/workstonedai-collab/click-to-css)** | Select elements in a local static page, preview CSS changes, save them to allowed stylesheets, and undo edits. Built for static HTML and ordinary CSS with Vite. / 在本地静态页面中点选元素、预览样式调整、保存到允许修改的 CSS 文件并撤销；适用于 Vite 下的静态 HTML 和普通 CSS。 |
-| **[AI Evidence Check](https://github.com/workstonedai-collab/ai-evidence-check)** | Compare AI-extracted fields and quotations with supplied source text, produce review reports, and optionally request model-assisted review suggestions. / 将 AI 提取的字段和引用与提供的原文对照，生成复核报告，并可接入模型获取人工复核建议。 |
-| [Public Data Connectors](https://github.com/workstonedai-collab/public-data-connectors) | Access World Bank, Eurostat, and GLEIF data through reusable adapters that preserve source context. / 通过可复用的连接器接入世界银行、Eurostat 和 GLEIF 公共数据，并保留来源信息。 |
-| [Agent Task Recovery Kit](https://github.com/workstonedai-collab/agent-task-recovery-kit) | Save local checkpoints and resume sequential workflows after interruptions, with explicit retry and idempotency handling. / 保存本地检查点，在中断后恢复顺序任务，并明确处理重试与幂等性。 |
-| [Report Export Kit](https://github.com/workstonedai-collab/report-export-kit) | Export structured content, tables, and charts as PDF, DOCX, and Markdown reports. / 将结构化内容、表格和图表导出为 PDF、Word 和 Markdown 报告。 |
-
-### More tools / 更多工具
-
-- [Bilingual News Dedupe](https://github.com/workstonedai-collab/bilingual-news-dedupe) — Deduplication for Chinese and English news workflows. / 中英文资讯流程中的去重工具。
-- [Source Rights Gate](https://github.com/workstonedai-collab/source-rights-gate) — Configurable source permissions and collection rules. / 可配置的信息来源权限与采集规则。
-- [Human Review Research Agent](https://github.com/workstonedai-collab/human-review-research-agent) — A research-agent example with human review. / 带人工复核的研究智能体示例。
-- [Miniapp Project Check](https://github.com/workstonedai-collab/miniapp-project-check) — Local checks for mini-program project setup. / 小程序项目配置的本地检查工具。
-
-## Open-source contributions / 开源贡献
-
-We also contribute fixes and documentation to tools we use. Status below was checked on **2026-10-05**; the linked pull requests contain the latest updates.  
-我们也向使用的开源工具提交修复和文档改进。以下状态核对于 **2026-10-05**，最新进展请查看对应 PR。
-
-| Project / 项目 | Contribution / 贡献 | Status / 状态 |
-| --- | --- | --- |
-| [Kandev](https://github.com/kdlbs/kandev/pull/4082) | Documented E2E setup for a fresh checkout. / 补充从新检出项目开始的端到端测试准备说明。 | **Merged; included in [v0.97.0](https://github.com/kdlbs/kandev/releases/tag/v0.97.0). / 已合并，并进入正式版本。** |
-| [Trafilatura](https://github.com/adbar/trafilatura/pull/944) | Linked existing URL-discovery tools from extraction guidance. / 在内容提取说明中补充已有链接发现工具的入口。 | **Merged. / 已合并。** |
-| [MarkItDown](https://github.com/microsoft/markitdown/pull/2529#issuecomment-5997199878) | Fixed code-fence handling after list markers, preserving code whitespace. / 修复列表标记后代码围栏的处理，保留代码空白。 | **Patch adopted into the original author's PR branch with authorship preserved; upstream PR awaits merge. / 补丁已被原作者纳入其 PR 分支并保留署名，上游 PR 待合并。** |
+</details>
 
 ## Feedback & collaboration / 反馈与协作
 
-If you try a tool, its repository is the best place to report a problem or suggest an improvement. Include your goal, the tool version, reproduction steps, and a minimal example using public or synthetic data. Contributions and practical usage examples are welcome.  
-如果你试用了某个工具，欢迎在对应仓库反馈问题或提出改进建议。请说明使用目标、工具版本、复现步骤，并提供使用公开或合成数据的最小示例。也欢迎提交改进和实际使用案例。
+试用后，欢迎在对应仓库提交 Issue，告诉我们你想完成什么、用了哪个版本，以及卡在哪一步。附上复现步骤和使用公开或合成数据的最小示例，更方便一起解决。也欢迎分享完成任务的实际案例，或提交改进。
+
+If you try a tool, please open an issue in its repository with your goal, version, what happened, and reproduction steps. A minimal example using public or synthetic data helps us investigate. Practical usage stories and contributions are welcome.
