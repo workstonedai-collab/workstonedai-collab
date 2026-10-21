@@ -6,7 +6,7 @@
 
 我是 GKN 团队成员，从研究与信息服务出发，与 AI Agent 协作推进工具和产品落地。这里分享我们从实际工作中整理出的开源项目，覆盖社媒调研、公开信息采集、地缘政治风险、企业出海研究，以及任务恢复和报告交付。
 
-近期新增了两个独立的领域智能体：一个关注地缘政治变化如何影响人员、资产和业务，另一个结合企业实际情况研究市场进入与营商环境。它们共用相同版本的基座与证据格式，各自保存私有任务和报告。页面下方也保留了信息采集、社媒阅读、页面编辑和其他工具的入口。
+近期新增了两个独立的领域智能体：一个关注地缘政治变化如何影响人员、资产和业务，另一个结合企业实际情况研究市场进入与营商环境。它们共用相同版本的基座与证据格式，各自保存私有任务和报告。最新版本加入国区看板：覆盖215个经济体的治理分项，其中101个具备双源营商研究参考，支持多国比较、来源追溯，以及从国区研究继续形成行动路线图和观察条件。页面下方也保留了信息采集、社媒阅读、页面编辑和其他工具的入口。
 
 I am a member of Global Knowledge Network (GKN), working with AI agents to turn research workflows into practical tools. Recent releases add geopolitical-risk and market-entry agents, alongside social research, information collection, task recovery and report delivery. Feedback and contributions are welcome.
 
@@ -24,6 +24,10 @@ I am a member of Global Knowledge Network (GKN), working with AI agents to turn 
 
 
 两个领域智能体提供自托管网页、公开数据看板和虚构演示。国区评分配方与通用研究步骤公开；部分进一步研究方法、专用提示词及相关知识内容暂未开源，如需使用或交流，欢迎通过作者主页或项目Issue联系。 / Both agents are self-hosted alpha projects with public data, published reference calculations and general research steps. Some specialized methods, prompts and knowledge remain non-public; contact the author for further discussion.
+
+国区看板使用世界银行 B-READY 2025 与 WGI 2026 更新的2025年数据，公开快照为2026-10-21；60/40拟合为研究参考，缺失单列，不生成混合口径国家排名或模拟日涨跌。 / Country desks use a dated World Bank statistical snapshot, with source coverage and component comparisons. They provide research context, not calibrated rankings or live threat scores.
+
+[出海国区看板与方法](https://github.com/workstonedai-collab/market-entry-agent/blob/main/docs/country-dashboard.md) · [公开任务示例](https://github.com/workstonedai-collab/market-entry-agent/tree/main/examples) · [地缘风险任务示例](https://github.com/workstonedai-collab/georisk-agent/tree/main/examples)
 
 ### 不熟悉配置？把项目链接交给你的 Agent
 
