@@ -1,22 +1,29 @@
 # Workstone · Global Knowledge Network
 
-**让 AI Agent 帮你读社媒、追踪信息，把想法做成能用的工具。**
+**把信息追踪、国区研究和企业出海问题，做成能运行的 Agent 与工具。**
 
-**Practical AI tools for social research, information tracking, and building useful products.**
+**Research agents and practical tools for global expansion, geopolitical risk, and information workflows.**
 
-我是 GKN 团队成员，从研究与信息服务出发，与 AI Agent 协作推进工具和产品落地。这里分享我们从实际工作中整理出的开源项目，欢迎试用、提建议和参与改进。
+我是 GKN 团队成员，从研究与信息服务出发，与 AI Agent 协作推进工具和产品落地。这里分享我们从实际工作中整理出的开源项目，覆盖社媒调研、公开信息采集、地缘政治风险、企业出海研究，以及任务恢复和报告交付。
 
-I am a member of Global Knowledge Network (GKN), working with AI agents to turn research workflows into practical tools. This account shares reusable projects from that work. Feedback and contributions are welcome.
+近期新增了两个独立的领域智能体：一个关注地缘政治变化如何影响人员、资产和业务，另一个结合企业实际情况研究市场进入与营商环境。它们共用相同版本的基座与证据格式，各自保存私有任务和报告。页面下方也保留了信息采集、社媒阅读、页面编辑和其他工具的入口。
 
-[主要项目 / Start here](#start-here--从这里开始) · [更多工具 / More tools](#more-tools--更多工具) · [社区贡献 / Contributions](#open-source-contributions--开源贡献) · [关于我 / About](#about-me--global-knowledge-network)
+I am a member of Global Knowledge Network (GKN), working with AI agents to turn research workflows into practical tools. Recent releases add geopolitical-risk and market-entry agents, alongside social research, information collection, task recovery and report delivery. Feedback and contributions are welcome.
+
+[主要项目 / Start here](#start-here--从这里开始) · [项目关系 / Project map](#project-map--项目关系) · [更多工具 / More tools](#more-tools--更多工具) · [社区贡献 / Contributions](#open-source-contributions--开源贡献) · [关于我 / About](#about-me--global-knowledge-network)
 
 ## Start here / 从这里开始
 
 | 你想完成的事 / Your goal | 项目 / Project | 看演示与开始使用 / Try it |
 | --- | --- | --- |
+| **持续理解地缘政治风险**：围绕人员、资产、航线和业务读取来源，保存风险简报与观察清单。 / Research geopolitical developments against your business exposure. | **[地缘政治风险监测预警智能体](https://github.com/workstonedai-collab/georisk-agent)** · `georisk-agent` | [v0.4.0](https://github.com/workstonedai-collab/georisk-agent/releases/tag/v0.4.0) · [公开示例 / Examples](https://github.com/workstonedai-collab/georisk-agent/tree/main/examples) · [流程与技术路线 / Workflow](https://github.com/workstonedai-collab/georisk-agent#workflow) |
+| **研究市场进入与经营变化**：结合产品、阶段和约束，梳理进入路径、机会和待验证条件。 / Study entry options and changes in a target market. | **[企业出海咨询/国区营商环境监测智能体](https://github.com/workstonedai-collab/market-entry-agent)** · `market-entry-agent` | [v0.4.0](https://github.com/workstonedai-collab/market-entry-agent/releases/tag/v0.4.0) · [公开示例 / Examples](https://github.com/workstonedai-collab/market-entry-agent/tree/main/examples) · [流程与技术路线 / Workflow](https://github.com/workstonedai-collab/market-entry-agent#workflow) |
 | **让 Agent 搜索、阅读国内社媒**：跨平台读原文，提取小红书图中文字，查看有限评论，保留可回查的来源。 / Search and read Chinese social platforms with your local agent. | **[智能体国内社媒使用工具](https://github.com/workstonedai-collab/social-media-read-for-agent)** · `social-media-read-for-agent` | [把仓库交给 Agent](https://github.com/workstonedai-collab/social-media-read-for-agent#把仓库交给-agent) · [安装说明 / Setup](https://github.com/workstonedai-collab/social-media-read-for-agent/blob/main/docs/installation.md) · [虚构数据演示 / Fictional demo](https://github.com/workstonedai-collab/social-media-read-for-agent/blob/main/docs/assets/offline-demo.jpg) |
 | **把分散的信息整理成自己的表格**：追踪网页、RSS 与关键词，用自选 API 做摘要、标签和字段富化。 / Track sources and searches into custom information tables with optional AI enrichment. | **[GKN 全球信息采集程序](https://github.com/workstonedai-collab/global-knowledge-crawl-pipeline)** · Global Knowledge Crawl Pipeline | [无需密钥的离线案例 / Offline case](https://github.com/workstonedai-collab/global-knowledge-crawl-pipeline/blob/main/docs/walkthrough.zh-CN.md) · [English guide](https://github.com/workstonedai-collab/global-knowledge-crawl-pipeline/blob/main/docs/walkthrough.en.md) |
 | **看着页面改样式，再保存回源码**：点选元素、预览 CSS、保存与撤销，适合调整 Agent 生成的静态页面。 / Select an element, preview CSS changes, save to source, and undo. | **[Click-to-CSS · 点选式网页样式编辑器](https://github.com/workstonedai-collab/click-to-css)** | [操作演示 / Walkthrough](https://github.com/workstonedai-collab/click-to-css/blob/main/docs/walkthrough.zh-CN.md) · [English guide](https://github.com/workstonedai-collab/click-to-css/blob/main/docs/walkthrough.en.md) |
+
+
+两个领域智能体提供自托管网页、公开数据看板和虚构演示。国区评分配方与通用研究步骤公开；部分进一步研究方法、专用提示词及相关知识内容暂未开源，如需使用或交流，欢迎通过作者主页或项目Issue联系。 / Both agents are self-hosted alpha projects with public data, published reference calculations and general research steps. Some specialized methods, prompts and knowledge remain non-public; contact the author for further discussion.
 
 ### 不熟悉配置？把项目链接交给你的 Agent
 
@@ -47,11 +54,35 @@ The social reader connects Xiaohongshu, Weibo, Zhihu, and WeChat public-account 
 
 </details>
 
+## Project map / 项目关系
+
+这些项目围绕取材、研究、执行和交付展开。下图按用途组织入口；实际使用时，可以按需要选择单个工具或自行连接工作流程。
+
+These projects address different parts of research work. The map groups them by purpose; you can use one tool or connect selected tools in your own workflow.
+
+```mermaid
+flowchart LR
+    A["研究与信息服务中的实际问题<br/>Research and information work"] --> D["领域智能体 / Domain agents"]
+    A --> S["取材与数据 / Sources and data"]
+    A --> R["执行与交付 / Execution and delivery"]
+    D --> G["georisk-agent<br/>地缘政治风险监测预警"]
+    D --> M["market-entry-agent<br/>企业出海与营商环境研究"]
+    S --> SR["social-media-read-for-agent<br/>国内社媒搜索与阅读"]
+    S --> P["global-knowledge-crawl-pipeline<br/>网页、搜索与表格采集"]
+    S --> PD["public-data-connectors<br/>公开数据与来源信息"]
+    R --> T["agent-task-recovery-kit<br/>检查点与任务恢复"]
+    R --> MI["miniapp-ai-task-starter<br/>小程序长任务示例"]
+    R --> EX["report-export-kit<br/>结构化报告导出"]
+```
+
+[下载项目关系图 / Download SVG](assets/project-map.svg)
+
 ## More tools / 更多工具
 
 | 项目 / Project | 用途 / Purpose |
 | --- | --- |
 | [AI Evidence Check](https://github.com/workstonedai-collab/ai-evidence-check) | 将 AI 提取的字段、引用、数字与提供的原文对照，生成复核报告。 / Compare extracted fields, quotations, and numbers with supplied source text. |
+| [Miniapp AI Task Starter](https://github.com/workstonedai-collab/miniapp-ai-task-starter) | 小程序长任务示例：创建任务、分步保存、显式恢复与重开结果；附虚构离线演示。 / A local miniapp task example with checkpointing, explicit retry and saved-result reopen. |
 | [Agent Task Recovery Kit](https://github.com/workstonedai-collab/agent-task-recovery-kit) | 保存本地检查点，在中断后恢复顺序任务，复用已完成结果。 / Checkpoint and resume sequential workflows locally. |
 | [Report Export Kit](https://github.com/workstonedai-collab/report-export-kit) | 将结构化内容、表格和图表导出为 PDF、Word 和 Markdown。 / Export structured reports, tables, and charts. |
 | [Public Data Connectors](https://github.com/workstonedai-collab/public-data-connectors) | 接入 World Bank、Eurostat 和 GLEIF，保留单位、时间和来源。 / Access public datasets with provenance. |
